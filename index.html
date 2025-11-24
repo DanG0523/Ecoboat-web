@@ -4,96 +4,93 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>EcoBoat Cartagena</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4faff;
+    }
+
+    header {
+      background: #0a4da3;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    footer {
+      background: #083b7a;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">ECOBOAT</div>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre">Sobre EcoBoat</a>
-        <a href="#impacto">Impacto ambiental</a>
-        <a href="#turismo">Turismo ecológico</a>
-        <a href="#participa">Participa</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
+
+  <header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre EcoBoat</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#turismo">Turismo</a>
+      <a href="#participa">Participa</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <img class="hero-img" src="Barco.jpeg" alt="EcoBoat navega en Cartagena">
-      <div class="hero-overlay">
-        <h1>Navega por un futuro más limpio</h1>
-        <p>Vive una experiencia ecológica que contribuye a recuperar el mar Caribe.</p>
-        <a class="btn-primary" href="#turismo">Reserva tu viaje</a>
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="container section two-col">
-      <div class="col text">
-        <h2>Sobre EcoBoat</h2>
-        <p>EcoBoat es una embarcación sostenible diseñada para recolectar residuos flotantes, operar con energía limpia y educar a visitantes sobre la conservación de ecosistemas acuáticos en Cartagena de Indias.</p>
-
-        <h3>¿Cómo funciona?</h3>
-        <p>El sistema integra recolección automatizada y contenedores visibles que almacenan los residuos hasta su correcta disposición. Opera con energía solar para minimizar la huella ambiental.</p>
-      </div>
-
-      <div class="col image">
-        <!-- Se usa la MISMA imagen pero más pequeña -->
-        <img src="Barco.jpeg" alt="Sistema de recolección EcoBoat">
-        <figcaption>Vista del sistema de recolección integrado en la embarcación.</figcaption>
-      </div>
-    </section>
-
-    <!-- IMPACTO -->
-    <section id="impacto" class="container section stats">
-      <h2>Impacto ambiental</h2>
-      <div class="stats-row">
-        <div class="stat">
-          <div class="stat-value">5.215 kg</div>
-          <div class="stat-label">de basura recolectada</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">2.980 kWh</div>
-          <div class="stat-label">de energía solar utilizada</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">48</div>
-          <div class="stat-label">recorridos sostenibles</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TURISMO -->
-    <section id="turismo" class="container section">
-      <h2>Turismo ecológico</h2>
-      <p>Ofrecemos rutas responsables que combinan naturaleza, aprendizaje y recuperación del entorno marino. Ideal para turistas, escuelas y voluntarios.</p>
-    </section>
-
-    <!-- PARTICIPA -->
-    <section id="participa" class="container section">
-      <h2>Participa</h2>
-      <p>Únete como voluntario, patrocinador o visitante. Colaboramos con comunidades locales para mejorar la calidad de vida en zonas costeras.</p>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="container section">
-      <h2>Contacto</h2>
-      <p>EcoBoat — Cartagena de Indias<br>Email: contacto@ecoboat.example</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 EcoBoat Cartagena — Recuperando el mar</p>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <img src="assets/Barco.jpeg" alt="EcoBoat navegando">
+    <div class="hero-text">
+      <h1>Navega hacia un mar más limpio</h1>
+      <p>Recuperemos juntos el ecosistema marino de Cartagena.</p>
     </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre EcoBoat</h2>
+    <p>EcoBoat es una embarcación ecológica dedicada a recolectar residuos flotantes mientras promueve turismo sostenible en Cartagena de Indias.</p>
+  </section>
+
+  <footer>
+    © 2025 EcoBoat Cartagena
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
