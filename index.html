@@ -3,204 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoBoat</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f9ff;
-            color: #003049;
-        }
-
-        /* HEADER */
-        header {
-            background-color: #e0f0ff;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 2px solid #b5d3ea;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            color: #005f99;
-        }
-
-        /* NAVBAR */
-        nav {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            padding: 15px 0;
-            border-bottom: 1px solid #c7d9e6;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #005f99;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-
-        nav a:hover {
-            color: #0088cc;
-        }
-
-        /* HERO */
-        .hero {
-            position: relative;
-            text-align: center;
-        }
-
-        .hero img {
-            width: 100%;
-            max-height: 380px;
-            object-fit: cover;
-        }
-
-        .hero-text {
-            position: absolute;
-            bottom: 30px;
-            width: 100%;
-            color: white;
-            text-shadow: 1px 1px 6px #000;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        /* CONTENEDOR GENERAL */
-        .container {
-            width: 85%;
-            margin: 40px auto;
-        }
-
-        h2 {
-            color: #005f99;
-            text-align: center;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-
-        p {
-            text-align: center;
-            line-height: 1.6;
-        }
-
-        /* SECCIÓN DE RECOLECCIÓN */
-        .recoleccion-img {
-            width: 100%;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-
-        /* IMPACTO */
-        .impacto-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-top: 25px;
-            text-align: center;
-        }
-
-        .impacto-item {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid #d0e3f2;
-            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #003049;
-            color: white;
-            padding: 25px;
-            margin-top: 40px;
-            text-align: center;
-        }
-    </style>
+    <title>EcoBoat – Turismo y Limpieza del Agua</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>EcoBoat</h1>
-</header>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <div class="logo">EcoBoat</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre EcoBoat</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#turismo">Turismo</a></li>
+                <li><a href="#participa">Participa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre">Sobre EcoBoat</a>
-    <a href="#impacto">Impacto ambiental</a>
-    <a href="#turismo">Turismo ecológico</a>
-    <a href="#participa">Participa</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<!-- HERO -->
-<section id="inicio" class="hero">
-    <img src="RUTA_DE_TU_IMAGEN_DEL_ECOBOAT.jpg" alt="EcoBoat navegando">
-    <div class="hero-text">Navega por un futuro más limpio</div>
-</section>
-
-<div class="container">
-
-    <!-- SOBRE ECOBOAT -->
-    <section id="sobre">
-        <h2>Sobre EcoBoat</h2>
-        <p>Ofrecemos viajes turísticos sostenibles mientras contribuimos a la limpieza de los cuerpos de agua mediante tecnología limpia basada en energía solar.</p>
-
-        <h3 style="text-align:center; margin-top:25px;">¿Cómo funciona?</h3>
-        <p>El EcoBoat utiliza paneles solares y un sistema automatizado para recolectar basura flotante y almacenarla de forma segura hasta su correcta disposición.</p>
-
-        <img src="RUTA_IMAGEN_RECOLECCION.jpg" class="recoleccion-img" alt="Sistema de recolección de basura">
-    </section>
-
-    <!-- IMPACTO AMBIENTAL -->
-    <section id="impacto">
-        <h2>Impacto ambiental</h2>
-
-        <div class="impacto-grid">
-            <div class="impacto-item">
-                <h3>5.215 kg</h3>
-                <p>Basura recolectada</p>
-            </div>
-
-            <div class="impacto-item">
-                <h3>2.980 kWh</h3>
-                <p>Energía solar utilizada</p>
-            </div>
-
-            <div class="impacto-item">
-                <h3>48</h3>
-                <p>Recorridos sostenibles</p>
-            </div>
+    <!-- Imagen principal -->
+    <section id="inicio" class="hero">
+        <img src="assets/Barco.jpeg" alt="EcoBoat" class="hero-img">
+        <div class="hero-text">
+            <h1>EcoBoat</h1>
+            <p>Turismo ecológico mientras limpiamos los mares de Cartagena.</p>
         </div>
     </section>
 
-    <!-- TURISMO -->
-    <section id="turismo" style="margin-top: 40px;">
-        <h2>Turismo ecológico</h2>
-        <p>Disfruta rutas sostenibles que combinan naturaleza, educación ambiental y la experiencia de recuperar el mar.</p>
+    <!-- Sección Sobre -->
+    <section id="sobre" class="section">
+        <h2>¿Qué es EcoBoat?</h2>
+        <p>
+            EcoBoat es un catamarán autosostenible que combina turismo ecológico con la 
+            recolección de residuos en cuerpos de agua, ayudando a mejorar la calidad del 
+            ecosistema marino de Cartagena.
+        </p>
     </section>
 
-    <!-- PARTICIPA -->
-    <section id="participa" style="margin-top: 40px;">
+    <!-- Impacto ambiental -->
+    <section id="impacto" class="section section-light">
+        <h2>Impacto Ambiental</h2>
+        <p>
+            Nuestro sistema usa energía solar y un compartimento visible que recolecta 
+            basura mientras navegamos, promoviendo la conservación del mar.
+        </p>
+    </section>
+
+    <!-- Turismo -->
+    <section id="turismo" class="section">
+        <h2>Turismo Ecológico</h2>
+        <p>
+            Ofrecemos experiencias únicas donde los visitantes conocen el proceso de 
+            limpieza, disfrutan del paisaje y aprenden sobre sostenibilidad.
+        </p>
+    </section>
+
+    <!-- Participa -->
+    <section id="participa" class="section section-light">
         <h2>Participa</h2>
-        <p>Únete como voluntario, aliado o inversor para proteger nuestros ecosistemas marinos.</p>
+        <p>
+            Súmate como voluntario, aliado o inversionista. EcoBoat crece gracias a la 
+            comunidad comprometida con el futuro del planeta.
+        </p>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" style="margin-top: 40px;">
+    <!-- Contacto -->
+    <section id="contacto" class="section">
         <h2>Contacto</h2>
-        <p>Para más información: ecoboat@gmail.com</p>
+        <p>Escríbenos a: <strong>ecoboat@contacto.com</strong></p>
     </section>
 
-</div>
-
-<footer>
-    EcoBoat © 2025 — Tecnología al servicio del mar
-</footer>
+    <footer>
+        <p>© 2025 EcoBoat – Proyecto Autosostenible</p>
+    </footer>
 
 </body>
 </html>
+
