@@ -1,40 +1,99 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4fff6;
-    color: #003b2e;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    color: #033e57;
 }
 
+/* Navbar */
 header {
-    background-color: #2e8b57;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    background-color: #026c9e;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-nav a {
-    margin: 0 10px;
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-#hero {
-    background: #b7ecd3;
-    padding: 60px 20px;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
 }
 
-section {
-    padding: 40px 20px;
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+}
+
+/* Secciones */
+.section {
+    padding: 60px 10%;
+}
+
+.section-light {
+    background-color: #d6f2ff;
 }
 
 h2 {
-    color: #1d6f50;
+    font-size: 2rem;
+    color: #014669;
 }
 
 footer {
+    background-color: #026c9e;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #2e8b57;
-    color: white;
+    margin-top: 20px;
 }
